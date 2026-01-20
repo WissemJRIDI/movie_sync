@@ -77,6 +77,20 @@ To build and serve the application for production:
 
    Access the application at `http://localhost:3000`.
 
+## Deploy to Render
+
+This repository includes a `render.yaml` file for easy deployment on Render.
+
+1. Create a new **Web Service** on Render.
+2. Connect your GitHub repository.
+3. Render will automatically detect the `render.yaml` file and configure the service.
+4. Click **Create Web Service**.
+
+Alternatively, manually configure:
+
+- **Build Command:** `npm run build:render`
+- **Start Command:** `npm start`
+
 ## Project Structure
 
 - `client/`: React frontend application.
